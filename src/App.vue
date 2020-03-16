@@ -22,8 +22,8 @@ window.onload = function() {
     font-family: Avenir, Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    color: #fff;
-    background: #00065b;
+    /* color: #fff; */
+    /* background: #00065b; */
     margin: 0;
     padding: 0;
 }

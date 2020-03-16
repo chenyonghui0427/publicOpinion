@@ -1,15 +1,20 @@
 <template>
     <div class="home">
         <div class="content">
+            <LineCharts  :lineList="lineList"/>
             <canvas id="myChart"></canvas>
+            <div @click="change">change</div>
         </div>
     </div>
 </template>
 
 <script>
 const F2 = require("@antv/f2");
+import LineCharts from "@/components/charts/line";
 export default {
-    name: "Home",
+    components: {
+        LineCharts
+    },
     data() {
         return {
             data: [
@@ -18,10 +23,14 @@ export default {
                 { genre: "Action", sold: 120 },
                 { genre: "Shooter", sold: 350 },
                 { genre: "Other", sold: 150 }
-            ]
+            ],
+            lineList:[1,2,3,4,5]
         };
     },
     methods: {
+        change(){
+            this.lineList=[1,2,3,4,5,4,3,2,1]
+        },
         load() {
             var that = this;
             const chart = new F2.Chart({
