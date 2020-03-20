@@ -23,7 +23,7 @@ window.onload = function() {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     /* color: #fff; */
-    /* background: #00065b; */
+    background: #f6f7f9;
     margin: 0;
     padding: 0;
 }
